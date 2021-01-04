@@ -32,7 +32,7 @@ void Time::Reset(int h, int m)
 
 Time Time::Sum(const Time & t) const{
     Time sum;
-    sum.minutes = this->minutes;
+    sum.minutes = this->minutes + t.minutes;
     sum.hours = this->hours + t.hours + sum.minutes / 60;
     sum.minutes = sum.minutes % 60;
     return sum;

@@ -15,5 +15,18 @@ int main()
     planning.show();
     cout << endl;
 
+    cout << "coding time = ";
+    coding.show();
+    cout << endl;
+
+    cout << "fixing time = ";
+    fixing.show();
+    cout << endl;
+
+    total = coding.Sum(fixing);
+    cout << "coding add fixing time = ";
+    total.show();
+    cout << endl;
+
     return 0;
 }
