@@ -6,7 +6,7 @@ Time::Time()
     hours = minutes = 0;
 }
 
-Time::Time(int h, int m = 0)
+Time::Time(int h, int m)
 {
     hours = h;
     minutes = m;
@@ -24,7 +24,7 @@ void Time::AddHr(int h)
     hours += h;
 }
 
-void Time::Reset(int h = 0, int m = 0)
+void Time::Reset(int h, int m)
 {
     hours = h;
     minutes = m;
